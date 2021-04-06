@@ -18,7 +18,7 @@ function handleIndex(request, response) {
     apiversion: '1',
     author: '',
     color: '#888888',
-    head: 'default',
+    head: 'shades',
     tail: 'default'
   }
   response.status(200).json(battlesnakeInfo)
@@ -26,6 +26,7 @@ function handleIndex(request, response) {
 
 function handleStart(request, response) {
   var gameData = request.body
+	console.log(gameData)
 
   console.log('START')
   response.status(200).send('ok')
@@ -35,7 +36,7 @@ function handleMove(request, response) {
   var gameData = request.body
 
   var possibleMoves = ['up', 'down', 'left', 'right']
-  var move = possibleMoves[Math.floor(Math.random() * possibleMoves.length)]
+  var move = possibleMoves[3]
 
   console.log('MOVE: ' + move)
   response.status(200).send({
