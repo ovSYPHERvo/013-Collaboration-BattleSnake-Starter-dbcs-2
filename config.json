@@ -1,8 +1,8 @@
 {
   "apiversion": "1",
   "author": "",
-  "color": "#00FF00",
-  "head": "default",
-  "tail": "default",
+  "color": "#E80978",
+  "head": "gamer",
+  "tail": "mouse",
   "logStartEnd": false
 }
